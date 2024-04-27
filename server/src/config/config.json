@@ -1,0 +1,27 @@
+{
+    "development": {
+        "username": "root",
+        "password": null,
+        "database": "shopgame",
+        "host": "localhost",
+        "dialect": "mysql",
+        "logging": false,
+        "collate": "utf8mb4_unicode_ci"
+    },
+    "test": {
+        "username": "freedb_rootkk",
+        "password": "@WuEJKMdZ55qmzx",
+        "database": "freedb_ShopGame",
+        "host": "sql.freedb.tech",
+        "dialect": "mysql",
+        "logging": false,
+        "collate": "utf8mb4_unicode_ci"
+    },
+    "production": {
+        "username": "root",
+        "password": null,
+        "database": "database_production",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    }
+}
