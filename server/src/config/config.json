@@ -1,9 +1,9 @@
 {
     "development": {
-        "username": "root",
-        "password": null,
-        "database": "shopgame",
-        "host": "localhost",
+        "username": "freedb_larryle2004",
+        "password": "h4meg59K9#przSy",
+        "database": "freedb_shopgame2025",
+        "host": "sql.freedb.tech",
         "dialect": "mysql",
         "logging": false,
         "collate": "utf8mb4_unicode_ci"
