@@ -7,6 +7,7 @@ const connectDB = require("./config/connectDB");
 const app = express();
 
 require("dotenv").config();
+
 // Configure app
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -18,6 +19,7 @@ app.use(
     credentials: true,
   })
 );
+
 app.get("/", (req, res, next) => {
   res.send("Api's ready to use...");
 });
@@ -28,10 +30,9 @@ app.use(express.static("Images"));
 
 initWebRoutes(app);
 
-connectDB();
+let port = process.env.PORT || 8888;
 
-let port = process.env.PORT || 8080;
-
-app.listen(port, () => {
+app.listen(port, async () => {
   console.log("Backend Node.js is running on port: " + port);
+  await connectDB();
 });
